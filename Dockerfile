@@ -22,7 +22,8 @@ RUN apt-get update \
 RUN mkdir -p /var/log/onetime /var/run/onetime /var/lib/onetime /etc/onetime /source/onetime
 COPY . /source/onetime
 RUN cd /source/onetime \
-  && bundle install --frozen --deployment --without=dev \
+  && bundle install \
+  && bundle config set --local deployment 'true' --local frozen 'true' --local without 'dev' \
   && gem update \
   && bin/ots init \
   && cp -R etc/* /etc/onetime
