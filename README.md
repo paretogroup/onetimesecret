@@ -1,11 +1,11 @@
 # One Time Secret Docker Image
-This repository is a fork of this fork https://github.com/siw36/onetimesecret of this awesome project onetimesecret (https://onetimesecret.com/).   
+This repository is a fork of this fork https://github.com/siw36/onetimesecret of this awesome project Onetimesecret (https://onetimesecret.com/).   
 
 ### Differences from the original
 - Containerized (Docker image)
 - Deployable on Kubernetes and OpenShift
 - No accounts and paid features, just secret sharing
-- Customizable for your project/company (through environment variables)
+- Customized for Pareto
 
 ### Image details
 - Base image: `ruby:2.5.9` (official image from Docker Hub) <img src="https://www.ruby-lang.org/favicon.ico" alt="Ruby Icon" height="20"/>
