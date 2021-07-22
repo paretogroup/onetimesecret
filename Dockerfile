@@ -1,4 +1,4 @@
-FROM ruby:latest
+FROM ruby:2.5.9
 
 # Dependencies
 RUN apt-get update \

@@ -355,10 +355,10 @@ parameters:
   value: latest
 - name: FAV_ICON
   description: The favorite icon for the deployment (png)
-  value: https://some.domain.io/favicon.png
+  value: https://some.domain.io/pareto_icon.png
 - name: LOGO
   description: The logo for the website (png)
-  value: https://some.domain.io/company_logo.png
+  value: https://some.domain.io/company_pareto.png
 
 
 labels:

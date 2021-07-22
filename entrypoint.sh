@@ -39,14 +39,7 @@ sed -i "s/__OTS_SHOW_SECRET/$OTS_SHOW_SECRET/g" $CFG
 sed -i "s/__OTS_BURN_SECRET/$OTS_BURN_SECRET/g" $CFG
 
 echo "##### Apply style customisations #####"
-if [ ! -z "$OTS_IMAGE_FAV_ICON" ]; then
-  rm -r $WEBFILES/img/favicon.png
-  curl -o $WEBFILES/img/favicon.png $OTS_IMAGE_FAV_ICON
-fi
-if [ ! -z "$OTS_IMAGE_LOGO" ]; then
-  rm -r $WEBFILES/img/logo.png
-  curl -o $WEBFILES/img/logo.png $OTS_IMAGE_LOGO
-fi
+
 if [ ! -z "$OTS_COLOR" ]; then
   sed -i "s/__OTS_BANNER_COLOR/$OTS_COLOR/g" $CSS
   sed -i "s/__OTS_BUTTON_COLOR/$OTS_COLOR/g" $CSS
