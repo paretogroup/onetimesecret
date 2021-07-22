@@ -1,5 +1,5 @@
 # One Time Secret Docker Image
-This repository is a fork of th awesome project onetimesecret (https://onetimesecret.com/).   
+This repository is a fork of this fork https://github.com/siw36/onetimesecret of this awesome project onetimesecret (https://onetimesecret.com/).   
 
 ### Differences from the original
 - Containerized (Docker image)
@@ -8,12 +8,9 @@ This repository is a fork of th awesome project onetimesecret (https://onetimese
 - Customizable for your project/company (through environment variables)
 
 ### Image details
-- Base image: `ruby:latest` (official image from Docker Hub) <img src="https://www.ruby-lang.org/favicon.ico" alt="Ruby Icon" height="20"/>
+- Base image: `ruby:2.5.9` (official image from Docker Hub) <img src="https://www.ruby-lang.org/favicon.ico" alt="Ruby Icon" height="20"/>
 - This image is designed to run on Kubernetes/OpenShift __together with a REDIS container in a pod (see examples)__.  
 - The container can and should be run unprivileged (leveraging the OCP arbitrary user ID feature).  
-- Pre build docker images:
- - [hub.docker.com siw36/onetimesecret](https://hub.docker.com/r/siw36/onetimesecret) [![Build on Docker Hub](https://img.shields.io/docker/cloud/build/siw36/onetimesecret.svg "Build on Docker Hub")](https://hub.docker.com/r/siw36/onetimesecret)
- - [quay.io siw36/onetimesecret](https://quay.io/repository/siw36/onetimesecret) [![Build on Quay](https://quay.io/repository/siw36/onetimesecret/status "Build on Quay")](https://quay.io/repository/siw36/onetimesecret)
 
 ### Variables
 | Name | Description | Default value |
