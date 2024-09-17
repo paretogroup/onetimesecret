@@ -1,4 +1,4 @@
-FROM ruby:2.5.9
+FROM ruby:3.0.7-buster
 
 # Dependencies
 RUN apt-get update \
@@ -20,7 +20,9 @@ RUN apt-get update \
 
 # OTS
 RUN mkdir -p /var/log/onetime /var/run/onetime /var/lib/onetime /etc/onetime /source/onetime
+
 COPY . /source/onetime
+
 RUN cd /source/onetime \
   && bundle install \
   && bundle config set --local deployment 'true' --local frozen 'true' --local without 'dev' \
