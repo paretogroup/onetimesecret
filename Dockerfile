@@ -1,4 +1,4 @@
-FROM ruby:3.0.7-buster
+FROM ruby:2.5.9
 
 # Dependencies
 RUN apt-get update \
@@ -16,7 +16,7 @@ RUN apt-get update \
     libssl-dev \
     libxml2 \
     libreadline-gplv2-dev \
-  && gem install bundler
+  && gem install bundler -v 1.12.5
 
 # OTS
 RUN mkdir -p /var/log/onetime /var/run/onetime /var/lib/onetime /etc/onetime /source/onetime
