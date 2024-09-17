@@ -15,7 +15,7 @@ RUN apt-get update \
     zlib1g-dev \
     libssl-dev \
     libxml2 \
-    libreadline-gplv2-dev \
+    libreadline-dev \
   && gem install bundler -v 1.12.5
 
 # OTS
